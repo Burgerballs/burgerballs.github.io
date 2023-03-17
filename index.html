@@ -1,0 +1,80 @@
+<!doctype html>
+<head>
+<style>
+
+body {
+	margin:32px 0px 32px 0px;
+	background-image: url("./homepage-patt.svg");
+	background-size:60%;
+	background-color: #000000;
+	background-attachment:fixed;
+	text-align:center;
+	color:#a59cf8;
+	font-size: 24px;
+	font-family: 'ok', monospace;
+	text-shadow: 3px -2px 0px #2c1010;
+	animation: backgroundScroll 8s linear infinite;
+}
+@keyframes backgroundScroll {
+	0% {background-position:0px 0px;}
+	50% {background-position:1280px 0px;}
+	100% {background-position:2560px 0px;}
+}
+#crazyperspective{
+	perspective: 88px;
+	font-size:32px;
+	position:relative;
+	transform: rotateX(20deg) rotateY(20deg);
+	transform-style: preserve-3d;
+	animation: perspectiveShift 4s ease-in-out infinite;
+}
+#page {
+	background-image: url("./homepage-patt-front.svg");
+	animation: backgroundScroll 16s linear infinite;
+	height: 100%;
+	min-height: 100%;
+	width: 900px;
+	background-size:40%;
+	margin: auto;
+	font-size: 22px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-bottom-left-radius: 15px;
+	-moz-border-radius-bottomright: 15px;
+	border-bottom-right-radius: 15px;
+}
+@keyframes perspectiveShift {
+	0% {
+		scale:100%;
+	}
+	25% {
+		scale:110%;
+	}
+	50% {
+		scale:100%;
+	}
+	75% {
+		scale:110%;
+	}
+	100% {
+		scale:100%;
+	}
+}
+
+</style>
+</head>
+
+<body onLoad="checkDarkMode()">
+<br/>
+<br/>
+<div id="crazyperspective"> BURGERBALLS' SHITTY WEBSITE!!</div>
+<br/><br/> <h1>Hello!</h1>
+<div id="page">I am an aspiring game developer, composer, and avid mod creator for the game Friday Night Funkin', I am the main programmer for Mother Team's "Sky Remanifested V2", Dawn's "Vs Rush", and Dysfunctional Funkin's "An Artist's Nightmare"!</div>
+<br/>
+<br/><br/> <h1>Where are you...</h1>
+<div id="page">Twitter: @burgerballs9<br/>Github: Burgerballs<br/>I would also share my discord but I am not much of a DMs guy, I mostly go into servers and GCs for conversations</div>
+
+</body>
