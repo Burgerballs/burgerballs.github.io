@@ -40,3 +40,7 @@ function makeText(filename) {
 window.onload = function() {
     makeText("gamebananamods.txt");
 }
+window.onclick = function(){
+    var audio = new Audio('click.mp3');
+    audio.play();
+};
