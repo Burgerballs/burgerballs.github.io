@@ -1,8 +1,10 @@
-mod_name,work_time,mod_id,mod_image
+mod_name,release,mod_id,mod_image
+Funkin' Raven,(2024 - ),https://github.com/crowplexus/Funkin-Raven,no-image.png
+Friday Night Funkin' (Github contributor),(2020 - ),https://github.com/FunkinCrew/Funkin,https://github.com/FunkinCrew/funkin.art/blob/66572f85d826ce2ec1d45468c12733b161237ffa/thumbnailNewer.png?raw=true
+Friday Night Funkin' Kero - Coder's Cut,(2024 - ),https://gamebanana.com/mods/499406,https://images.gamebanana.com/img/ss/mods/530-90_64cda91366c04.jpg
+Friday Night Funkin' Kero,(2023 - ),https://gamebanana.com/mods/460609,https://images.gamebanana.com/img/ss/mods/530-90_64cda91366c04.jpg
+Sky Remanifested,(2022 - 2022),https://gamebanana.com/mods/370008,https://images.gamebanana.com/img/ss/mods/530-90_636e7d66877fa.jpg
+FNF: An Artist's Nightmare,(2022 - 2023),https://gamebanana.com/mods/349368,https://images.gamebanana.com/img/ss/mods/530-90_64287a630a802.jpg
 Bub's Fruit Salad (Unreleased),(2024 - ),none,no-image.png
 Vs Sky Redux (Unreleased),(2024 - ),none,no-image.png
 Skyverse (Unreleased),(2024 - ),none,no-image.png
-Friday Night Funkin' Kero - Coder's Cut,(2024 - ),499406,https://images.gamebanana.com/img/ss/mods/530-90_64cda91366c04.jpg
-Friday Night Funkin' Kero,(2023 - 2023),460609,https://images.gamebanana.com/img/ss/mods/530-90_64cda91366c04.jpg
-Sky Remanifested,(2022 - 2022),370008,https://images.gamebanana.com/img/ss/mods/530-90_636e7d66877fa.jpg
-FNF: An Artist's Nightmare,(2022 - 2023),349368,https://images.gamebanana.com/img/ss/mods/530-90_64287a630a802.jpg
