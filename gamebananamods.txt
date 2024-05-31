@@ -1,4 +1,5 @@
 mod_name,release,mod_id,mod_image
+ModBootstrap,(2024 - ),https://gamebanana.com/mods/516273,https://images.gamebanana.com/img/ss/mods/66562c71e04f6.jpg
 Funkin' Raven [GAME FRAMEWORK],(2024 - ),https://github.com/crowplexus/Funkin-Raven,no-image.png
 Friday Night Funkin' (Github contributor),(2020 - ),https://github.com/FunkinCrew/Funkin,https://github.com/FunkinCrew/funkin.art/blob/66572f85d826ce2ec1d45468c12733b161237ffa/thumbnailNewer.png?raw=true
 Friday Night Funkin' Kero - Coder's Cut,(2024 - ),https://gamebanana.com/mods/499406,https://images.gamebanana.com/img/ss/mods/530-90_64cda91366c04.jpg
