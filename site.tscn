@@ -1,0 +1,283 @@
+[gd_scene format=3 uid="uid://xavaxp77rqvb"]
+
+[ext_resource type="Script" uid="uid://c02kymxsfb4mf" path="res://site.gd" id="1_hclia"]
+[ext_resource type="FontFile" uid="uid://cewceqf4fpld8" path="res://RobotoCondensed-VariableFont_wght.ttf" id="1_lvjbm"]
+[ext_resource type="Texture2D" uid="uid://bf2gvwbwuitkh" path="res://myceli.png" id="2_teaa3"]
+[ext_resource type="FontFile" uid="uid://bkpfo8gwg0nm7" path="res://RobotoCondensed-Italic-VariableFont_wght.ttf" id="4_vgo5p"]
+
+[sub_resource type="Gradient" id="Gradient_teaa3"]
+interpolation_mode = 1
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hclia"]
+gradient = SubResource("Gradient_teaa3")
+width = 256
+height = 256
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.75, 0.75)
+
+[sub_resource type="Gradient" id="Gradient_vgo5p"]
+offsets = PackedFloat32Array(0.19753087, 0.52469134, 0.8703704)
+colors = PackedColorArray(0.7490196, 0.83137256, 1, 1, 0.5882353, 0.84313726, 1, 1, 0.76862746, 0.84313726, 1, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_kuon7"]
+base_font = ExtResource("1_lvjbm")
+
+[sub_resource type="LabelSettings" id="LabelSettings_o0mrl"]
+font = SubResource("FontVariation_kuon7")
+
+[sub_resource type="FontVariation" id="FontVariation_lvjbm"]
+base_font = ExtResource("1_lvjbm")
+variation_opentype = {
+2003265652: 100
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_teaa3"]
+font = SubResource("FontVariation_lvjbm")
+font_size = 256
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_hclia"]
+base_font = ExtResource("1_lvjbm")
+variation_opentype = {
+2003265652: 200
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_vgo5p"]
+font = SubResource("FontVariation_hclia")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_lvjbm"]
+font_names = PackedStringArray("Sans-Serif")
+font_weight = 600
+
+[sub_resource type="LabelSettings" id="LabelSettings_hclia"]
+font = SubResource("SystemFont_lvjbm")
+
+[sub_resource type="SystemFont" id="SystemFont_teaa3"]
+font_names = PackedStringArray("Sans-Serif")
+
+[sub_resource type="LabelSettings" id="LabelSettings_p5ocg"]
+paragraph_spacing = 8.0
+font = SubResource("SystemFont_teaa3")
+
+[sub_resource type="LabelSettings" id="LabelSettings_2cuo8"]
+font = SubResource("SystemFont_teaa3")
+
+[sub_resource type="FontVariation" id="FontVariation_teaa3"]
+base_font = ExtResource("1_lvjbm")
+variation_opentype = {
+2003265652: 400
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_ogy7i"]
+font = SubResource("FontVariation_teaa3")
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hu0go"]
+font = SubResource("FontVariation_kuon7")
+font_size = 12
+
+[node name="Node2D" type="Node2D" unique_id=1076615046]
+script = ExtResource("1_hclia")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=398165388]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.7508819, 0.8320992, 1, 1)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=914471850]
+texture_filter = 1
+position = Vector2(576, 832)
+texture = SubResource("GradientTexture2D_hclia")
+lifetime = 2.3899999999999997
+emission_shape = 3
+emission_rect_extents = Vector2(720, 1)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 336.63
+initial_velocity_max = 544.55
+orbit_velocity_min = -0.1
+orbit_velocity_max = 0.1
+scale_amount_min = 0.5
+scale_amount_max = 2.0
+color_ramp = SubResource("Gradient_vgo5p")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=200810463]
+offset_right = 1152.0
+offset_bottom = 32.0
+color = Color(0, 0, 0, 1)
+
+[node name="Bub" type="Label" parent="ColorRect" unique_id=1184427894]
+layout_mode = 0
+offset_right = 768.0
+offset_bottom = 21.333334
+scale = Vector2(1.5, 1.5)
+text = "Hello!"
+label_settings = SubResource("LabelSettings_o0mrl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Myceli" type="Sprite2D" parent="." unique_id=1909188811]
+texture_filter = 1
+position = Vector2(8, 291)
+texture = ExtResource("2_teaa3")
+centered = false
+
+[node name="Label" type="Label" parent="." unique_id=1797196717]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 378.0
+offset_bottom = 215.0
+text = "Myceli"
+label_settings = SubResource("LabelSettings_teaa3")
+
+[node name="Label" type="Label" parent="Label" unique_id=1571072920]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 256.0
+offset_right = 668.0
+offset_bottom = 417.0
+scale = Vector2(0.8, 0.5)
+text = "Programmer, Musician, Awesome
+Twitter: @burgerballs9
+Discord: burgerballsium
+Gamebanana: burgerballs9 "
+label_settings = SubResource("LabelSettings_vgo5p")
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1112099010]
+offset_left = 744.0
+offset_top = 64.0
+offset_right = 1112.0
+offset_bottom = 584.0
+color = Color(0, 0, 0, 0.60784316)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ColorRect3" unique_id=905412182]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="ColorRect3/ScrollContainer" unique_id=1714380521]
+custom_minimum_size = Vector2(120, 560)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=1689181431]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 57.0
+offset_bottom = 31.0
+text = "Who are you!"
+label_settings = SubResource("LabelSettings_hclia")
+
+[node name="Label2" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=2032286096]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 336.0
+offset_bottom = 227.0
+text = "It's me! Myceli! I'm a bisexual girl with various hobbies and talents much like a lot of other people! My pronouns are she/they.
+You may know me from projects I was formerly a part of or stuff I am currently working on, namely projects such as Bub's Fruit Salad and Fatal Files!"
+label_settings = SubResource("LabelSettings_p5ocg")
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=1167723504]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 232.0
+offset_right = 113.0
+offset_bottom = 255.0
+text = "What do you like!"
+label_settings = SubResource("LabelSettings_hclia")
+
+[node name="Label4" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=1644272263]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 264.0
+offset_right = 344.0
+offset_bottom = 448.0
+text = "My interests fluctuate vastly from time to time but I might as well mention them!
+- VSRGs (FNF, Etterna, Osu!Mania, Quaver)
+- Geometry Dash
+- Undertale & Deltarune
+- Minecraft
+- Homestuck"
+label_settings = SubResource("LabelSettings_2cuo8")
+autowrap_mode = 3
+
+[node name="Label5" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=1140243226]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 452.0
+offset_right = 147.0
+offset_bottom = 475.0
+text = "DNIs"
+label_settings = SubResource("LabelSettings_hclia")
+
+[node name="Label6" type="Label" parent="ColorRect3/ScrollContainer/Control" unique_id=2095475780]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 480.0
+offset_right = 344.0
+offset_bottom = 555.0
+text = "- People who hate minorities
+- Proshippers
+- Lolicons"
+label_settings = SubResource("LabelSettings_2cuo8")
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="." unique_id=1496214569]
+offset_left = 208.0
+offset_top = 608.0
+offset_right = 529.0
+offset_bottom = 656.0
+scale = Vector2(0.5, 0.5)
+text = "Art by @Ghospel_ghost on Twitter"
+label_settings = SubResource("LabelSettings_ogy7i")
+vertical_alignment = 2
+
+[node name="TwitterLink" type="LinkButton" parent="." unique_id=918991575]
+offset_left = 545.0
+offset_top = 340.0
+offset_right = 585.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.18359026, 0.18359041, 0.18359092, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/underline_spacing = 1
+theme_override_fonts/font = ExtResource("4_vgo5p")
+text = "Visit"
+uri = "https://twitter.com/burgerballs9"
+
+[node name="GBLink" type="LinkButton" parent="." unique_id=1384383139]
+offset_left = 588.0
+offset_top = 381.0
+offset_right = 628.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.18359026, 0.18359041, 0.18359092, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/underline_spacing = 1
+theme_override_fonts/font = ExtResource("4_vgo5p")
+text = "Visit"
+uri = "https://gamebanana.com/members/1991251"
+
+[node name="Bub" type="Label" parent="." unique_id=1696000084]
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 224.0
+offset_bottom = 55.0
+scale = Vector2(1.5, 1.5)
+text = "This website is designed for desktop devices!"
+label_settings = SubResource("LabelSettings_hu0go")
